@@ -1,0 +1,18 @@
+.history-container {
+  background-color: #394a3e;
+  border-radius: 12px;
+  padding: 1rem;
+  color: white;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.history-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.history-container li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #888;
+}

@@ -1,0 +1,70 @@
+.user-selector-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.claim-section,
+.add-user-section {
+  background-color: #2e3454;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.claim-section h3,
+.add-user-section h3 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.claim-section select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.claim-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.claim-btn:hover {
+  background-color: #4752c4;
+}
+
+.add-user {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.add-user input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  min-width: 150px;
+}
+
+.add-user button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-user button:hover {
+  background-color: #45a049;
+}

@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import "../css/ClaimButton.css";
 
-export default function ClaimButton({ userId, onClaim }) {
+const ClaimButton = ({ onClaim }) => {
   return (
-    <button onClick={() => onClaim(userId)} disabled={!userId}>
-      Claim Points
-    </button>
+    <div className="claim-button-container">
+      <button onClick={onClaim}>Claim Points</button>
+    </div>
   );
-}
+};
+
+export default ClaimButton;

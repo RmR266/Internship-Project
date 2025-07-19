@@ -1,16 +1,20 @@
-import React from 'react';
+import React from "react";
+import "../css/ClaimHistory.css";
 
-export default function ClaimHistory({ history }) {
+const ClaimHistory = ({ history }) => {
   return (
-    <div>
+    <div className="history-container">
       <h3>Claim History</h3>
       <ul>
-        {history.map(item => (
-          <li key={item._id}>
-            {item.userId.name} claimed {item.points} points at {new Date(item.claimedAt).toLocaleString()}
+        {history.map((entry) => (
+          <li key={entry._id}>
+            {entry.userId?.name} claimed {entry.points} points on{" "}
+            {new Date(entry.claimedAt).toLocaleString()}
           </li>
         ))}
       </ul>
     </div>
   );
-}
+};
+
+export default ClaimHistory;
